@@ -22,12 +22,12 @@ function List({
   return (
     <div>
       <div className="flex flex-col gap-1 align-middle justify-center">
-        <div className="flex justify-between mb-4 mt-4">
-          <h2 className="text-2xl font-bold ">Extensions List</h2>
-          <div className="flex gap-2 ">
+        <div className="flex flex-col items-center p-4 gap-4 sm:justify-between sm:mb-4 sm:mt-4 sm:flex-row">
+          <h2 className="text-2xl font-bold">Extensions List</h2>
+          <div className="flex gap-2 lg:gap-4">
             <button
               onClick={() => noFilter()}
-              className={`pl-3 pr-3 rounded-2xl ${
+              className={`px-4 rounded-2xl ${
                 Filter === "All"
                   ? "bg-red-700 text-neutral-0 dark:text-black transition delay-50"
                   : "bg-neutral-0 dark:bg-neutral-800 dark:text-white text-black"
@@ -59,7 +59,7 @@ function List({
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
           {extensions.map((extension) => (
             <div
               key={extension.id}
@@ -72,14 +72,14 @@ function List({
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <h3 className="font-bold ">{extension.name}</h3>
-                  <p className="text-gray-600 dark:text-neutral-100 text-sm ">
+                  <h3 className="font-bold">{extension.name}</h3>
+                  <p className="text-gray-600 dark:text-neutral-100 text-sm mb-4">
                     {extension.description}
                   </p>
                 </div>
               </div>
 
-              <div className="flex justify-between mt-2 items-center">
+              <div className="flex justify-between items-center">
                 <button
                   className="bg-neutral-200 dark:bg-neutral-800 dark:text-white dark:border-neutral-600 text-black border border-neutral-200 rounded-2xl py-1 px-2 mt-2"
                   onClick={() => onRemove(extension.id)}

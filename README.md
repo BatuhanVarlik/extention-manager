@@ -55,8 +55,8 @@ This project uses the example data from `src/app/data/data.json` and renders the
 ## Demo & Links
 
 - Frontend Mentor challenge: https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp
-- Live site: (add your deployed site URL here)
-- Solution URL: (add your GitHub repo URL here)
+- Live site: -
+- Solution URL: https://github.com/BatuhanVarlik/extention-manager
 
 ---
 

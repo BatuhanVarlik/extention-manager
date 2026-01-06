@@ -31,7 +31,7 @@ export default function Home() {
       ? extensions.filter((ext) => !ext.isActive)
       : extensions;
   return (
-    <main className="min-h-screen p-8 m-12">
+    <main className="min-h-screen p-4 m-2 sm:m-12 sm:p-8">
       <Navbar />
       <List
         extensions={filteredExtensions}
